@@ -6,6 +6,7 @@
     <meta name="description" content="HTML5">
     <meta name="author" content="LM">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/validar.js"></script>
 </head>
 <body>
     <header>
@@ -19,19 +20,19 @@
             </ul>
         </nav>
     </header>
-    <form action="" class="formulario">
+    <form action="" class="formulario" onsubmit="return validar();">
         <h1 class="formulario__titulo">Contáctenos</h1>
-        <input type="text" class="formulario__input">
+        <input type="text" id="nombre" name="nombre" class="formulario__input" required>
         <label for="" class="formulario__label">Nombre</label>
-         <input type="text" class="formulario__input">
+         <input type="text" id="apellidos"  name="apellidos" class="formulario__input" required>
         <label for="" class="formulario__label">Apellidos</label>
-         <input type="text" class="formulario__input">
+         <input type="email" id="email"  name="email" class="formulario__input" required>
         <label for="" class="formulario__label">Email</label>
-         <input type="text" class="formulario__input">
+         <input type="text" id="direccion"  name="direccion" class="formulario__input" required>
         <label for="" class="formulario__label">Dirección</label>
-         <input type="text" class="formulario__input">
+         <input type="text" id="telefono" name="telefono" class="formulario__input" pattern="[0-9]{9}" required>
         <label for="" class="formulario__label">Télefono</label>
-         <input type="text" class="formulario__input">
+         <input type="text" class="formulario__input" required>
         <label for="" class="formulario__label">Motivo de contacto</label>
         <input type="submit" class="formulario__submit">
     </form>
