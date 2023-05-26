@@ -190,7 +190,7 @@ body {
       width: 100%;
       height: 40px;
   }
-
+  
   /*Texto en la pestaña Descarga*/
 
   .descargar{
@@ -206,4 +206,5 @@ body {
   /*Mensaje que va con el botón*/
   .mensaje_boton{
     padding: 20px;
+    height: 20px;
   }
