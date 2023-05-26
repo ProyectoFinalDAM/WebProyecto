@@ -193,7 +193,7 @@ body {
       display: inline-block;
       bottom: 0;
       width: 100%;
-      height: 40px;
+      height: 20px;
   }
   
   /*Texto en la pestaña Descarga*/
@@ -212,4 +212,10 @@ body {
   .mensaje_boton{
     padding: 20px;
     height: 20px;
+  }
+
+  /* Footer del contacto */
+  .footer_contacto {
+    position: relative;
+    margin-top: 20px;
   }
