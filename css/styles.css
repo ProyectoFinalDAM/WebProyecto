@@ -90,6 +90,7 @@ main{
     padding: 20px;
     box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
     position: relative;
+
 }
 
 .formulario__titulo{
@@ -177,12 +178,16 @@ body {
   }
   
   /*Pie De Página*/
+  
 
   footer {
+    clear: both;
     background-color: #333;
   color: #fff;
   padding: 10px;
+  flex-direction: 0;
   text-align: center;
+  margin-top: auto;
   position: absolute;
       display: inline-block;
       bottom: 0;
