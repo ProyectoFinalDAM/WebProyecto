@@ -22,20 +22,33 @@
     </header>
     <form action="" class="formulario" onsubmit="return validar();">
         <h1 class="formulario__titulo">Contáctenos</h1>
-        <input type="text" id="nombre" name="nombre" class="formulario__input" required>
-        <label for="" class="formulario__label">Nombre</label>
-         <input type="text" id="apellidos"  name="apellidos" class="formulario__input" required>
-        <label for="" class="formulario__label">Apellidos</label>
-         <input type="email" id="email"  name="email" class="formulario__input" required>
-        <label for="" class="formulario__label">Email</label>
-         <input type="text" id="direccion"  name="direccion" class="formulario__input" required>
-        <label for="" class="formulario__label">Dirección</label>
-         <input type="text" id="telefono" name="telefono" class="formulario__input" pattern="[0-9]{9}" required>
-        <label for="" class="formulario__label">Télefono</label>
-         <input type="text" class="formulario__input" required>
-        <label for="" class="formulario__label">Motivo de contacto</label>
+        <div class="formulario__grupo">
+          <input type="text" id="nombre" name="nombre" class="formulario__input" required>
+          <label for="nombre" class="formulario__label">Nombre</label>
+        </div>
+        <div class="formulario__grupo">
+          <input type="text" id="apellidos" name="apellidos" class="formulario__input" required>
+          <label for="apellidos" class="formulario__label">Apellidos</label>
+        </div>
+        <div class="formulario__grupo">
+          <input type="email" id="email" name="email" class="formulario__input" required>
+          <label for="email" class="formulario__label">Email</label>
+        </div>
+        <div class="formulario__grupo">
+          <input type="text" id="direccion" name="direccion" class="formulario__input" required>
+          <label for="direccion" class="formulario__label">Dirección</label>
+        </div>
+        <div class="formulario__grupo">
+          <input type="text" id="telefono" name="telefono" class="formulario__input" pattern="[0-9]{9}" required>
+          <label for="telefono" class="formulario__label">Teléfono</label>
+        </div>
+        <div class="formulario__grupo">
+          <input type="text" class="formulario__input" required>
+          <label for="" class="formulario__label">Motivo de contacto</label>
+        </div>
         <input type="submit" class="formulario__submit">
-    </form>
+      </form>
+      
     <script src="js/form.js"></script>
        
 </body>
