@@ -9,7 +9,7 @@ header{
     height: 100px;
     background-color: rgb(204, 204, 204);
     display: flex;
-    align-items: center; /* Alineación vertical */
+    align-items: center;
 }
 nav {
     margin-left: auto;
@@ -140,7 +140,7 @@ main{
 #titulo{
     margin: 20px auto;
     font-weight: bold;
-}
+}*/
 
 /* Formulario */
 
