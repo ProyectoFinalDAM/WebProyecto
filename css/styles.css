@@ -76,6 +76,7 @@ main{
     text-align: justify;
     font-size: larger;
 }
+
 #titulo{
     margin: 20px auto;
     font-weight: bold;
@@ -90,7 +91,6 @@ main{
     padding: 20px;
     box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
     position: relative;
-
 }
 
 .formulario__titulo{
@@ -184,16 +184,16 @@ body {
   footer {
     clear: both;
     background-color: #333;
-  color: #fff;
-  padding: 10px;
-  flex-direction: 0;
-  text-align: center;
-  margin-top: auto;
-  position: absolute;
-      display: inline-block;
-      bottom: 0;
-      width: 100%;
-      height: 20px;
+    color: #fff;
+    padding: 10px;
+    flex-direction: 0;
+    text-align: center;
+    margin-top: auto;
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
   }
   
   /*Texto en la pestaña Descarga*/
@@ -215,7 +215,11 @@ body {
   }
 
   /* Footer del contacto */
-  .footer_contacto {
+  .footer_relativos {
     position: relative;
     margin-top: 20px;
+  }
+
+  .texto_documentacion {
+    padding: 10px 20px;
   }
