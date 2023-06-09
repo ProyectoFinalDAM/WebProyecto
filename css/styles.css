@@ -9,39 +9,100 @@ header{
     height: 100px;
     background-color: rgb(204, 204, 204);
     display: flex;
-    align-items: center; /* Alineación vertical */
+    align-items: center;
 }
-nav{
+nav {
     margin-left: auto;
     margin-right: 50px;
-}
-nav ul {
+  }
+  
+  nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    justify-content: end;
+    display: flex;
+    justify-content: flex-end;
   }
   
-nav li{
-   display: inline-block;
-   margin-right: 10px;
-}
-
-nav a{
+  nav li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav a {
     padding: 10px;
     text-decoration: none;
     color: rgb(34, 34, 34);
     background-color: grey;
     border-radius: 5px;
-}
-nav a:hover{
+  }
+  
+  nav a:hover {
     transition: 0.3s;
     background-color: rgb(88, 88, 88);
     color: rgb(255, 255, 255);
-}
-nav a:active{
+  }
+  
+  nav a:active {
     background-color: rgb(88, 88, 88);
-}
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      margin-right: 10px;
+    }
+  
+    nav ul {
+      display: none;
+    }
+  
+    nav li {
+      display: block;
+      margin: 5px 0;
+    }
+  
+    nav a {
+      display: block;
+      padding: 10px;
+      background-color: grey;
+      border-radius: 5px;
+    }
+  
+    nav a:hover,
+    nav a:active {
+      background-color: rgb(88, 88, 88);
+      color: rgb(255, 255, 255);
+    }
+  
+    .menu-toggle {
+      display: block;
+      cursor: pointer;
+      padding: 10px;
+      text-align: right;
+      background-color: grey;
+      border-radius: 5px;
+      color: rgb(34, 34, 34);
+    }
+  
+    .menu-toggle:hover,
+    .menu-toggle:active {
+      background-color: rgb(88, 88, 88);
+      color: rgb(255, 255, 255);
+    }
+  
+    .menu {
+      display: none;
+    }
+  
+    .menu.active {
+      display: block;
+      margin-top: 5px;
+    }
+  }  
 .logo{
     margin-right: auto;
     margin-left: 20px;
@@ -80,12 +141,14 @@ main{
 #titulo{
     margin: 20px auto;
     font-weight: bold;
-}
+}*/
 
 /* Formulario */
 
 .formulario{
-    width: 750px;
+    display: flex;
+    flex-direction:column;
+    max-width: 750px;
     margin: auto;
     margin-top: 30px;
     padding: 20px;
