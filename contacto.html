@@ -6,18 +6,59 @@
     <meta name="description" content="HTML5">
     <meta name="author" content="LM">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/validar.js"></script>
 </head>
 <body>
+    
     <header>
         <a href="index.html"><img src="img/LogoBatoiCineTop.png" alt="BatoiCine" class="logo"></a>
 
         <nav>
-            <ul>
-                <li><a href="descarga.html">Descarga</a></li>
-                <li><a href="documentacion.html">Documentación</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+          <div class="menu-toggle">Más</div>
+          <ul class="menu">
+            <li><a href="descarga.html">Descarga</a></li>
+            <li><a href="documentacion.html">Documentación</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
         </nav>
+        <script src="js/deplegable.js"></script>
     </header>
+    <main>
+        <form action="" class="formulario" onsubmit="return validar();">
+            <h1 class="formulario__titulo">Contáctenos</h1>
+            <div class="formulario__grupo">
+              <input type="text" id="nombre" name="nombre" class="formulario__input" required>
+              <label for="nombre" class="formulario__label">Nombre</label>
+            </div>
+            <div class="formulario__grupo">
+              <input type="text" id="apellidos" name="apellidos" class="formulario__input" required>
+              <label for="apellidos" class="formulario__label">Apellidos</label>
+            </div>
+            <div class="formulario__grupo">
+              <input type="email" id="email" name="email" class="formulario__input" required>
+              <label for="email" class="formulario__label">Email</label>
+            </div>
+            <div class="formulario__grupo">
+              <input type="text" id="direccion" name="direccion" class="formulario__input" required>
+              <label for="direccion" class="formulario__label">Dirección</label>
+            </div>
+            <div class="formulario__grupo">
+              <input type="text" id="telefono" name="telefono" class="formulario__input" pattern="[0-9]{9}" required>
+              <label for="telefono" class="formulario__label">Teléfono</label>
+            </div>
+            <div class="formulario__grupo">
+              <input type="text" class="formulario__input" required>
+              <label for="" class="formulario__label">Motivo de contacto</label>
+            </div>
+            <input type="submit" class="formulario__submit">
+          </form>
+          
+        <script src="js/form.js"></script>
+    </main>
+    
+       
 </body>
+<footer class="footer_relativos">
+    <p>© 2023 BatoiCine_Top. Todos los derechos reservados.</p>
+  </footer>
 </html>

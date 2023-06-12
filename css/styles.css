@@ -9,39 +9,100 @@ header{
     height: 100px;
     background-color: rgb(204, 204, 204);
     display: flex;
-    align-items: center; /* Alineación vertical */
+    align-items: center;
 }
-nav{
+nav {
     margin-left: auto;
     margin-right: 50px;
-}
-nav ul {
+  }
+  
+  nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    justify-content: end;
+    display: flex;
+    justify-content: flex-end;
   }
   
-nav li{
-   display: inline-block;
-   margin-right: 10px;
-}
-
-nav a{
+  nav li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav a {
     padding: 10px;
     text-decoration: none;
     color: rgb(34, 34, 34);
     background-color: grey;
     border-radius: 5px;
-}
-nav a:hover{
+  }
+  
+  nav a:hover {
     transition: 0.3s;
     background-color: rgb(88, 88, 88);
     color: rgb(255, 255, 255);
-}
-nav a:active{
+  }
+  
+  nav a:active {
     background-color: rgb(88, 88, 88);
-}
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      margin-right: 10px;
+    }
+  
+    nav ul {
+      display: none;
+    }
+  
+    nav li {
+      display: block;
+      margin: 5px 0;
+    }
+  
+    nav a {
+      display: block;
+      padding: 10px;
+      background-color: grey;
+      border-radius: 5px;
+    }
+  
+    nav a:hover,
+    nav a:active {
+      background-color: rgb(88, 88, 88);
+      color: rgb(255, 255, 255);
+    }
+  
+    .menu-toggle {
+      display: block;
+      cursor: pointer;
+      padding: 10px;
+      text-align: right;
+      background-color: grey;
+      border-radius: 5px;
+      color: rgb(34, 34, 34);
+    }
+  
+    .menu-toggle:hover,
+    .menu-toggle:active {
+      background-color: rgb(88, 88, 88);
+      color: rgb(255, 255, 255);
+    }
+  
+    .menu {
+      display: none;
+    }
+  
+    .menu.active {
+      display: block;
+      margin-top: 5px;
+    }
+  }  
 .logo{
     margin-right: auto;
     margin-left: 20px;
@@ -52,22 +113,22 @@ nav a:active{
 main{
     margin: 10px auto;
     width: 70%;
-    background-color: rgb(240, 240, 240);
     -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.42);
     -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.42);
-    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.42);
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
     display: flex;
     flex-wrap: wrap;
 }
 .container {
-    display:flex;
-    margin-bottom: 20px;
+  text-align: center; /* Centra la imagen horizontalmente */
+  line-height: 1.5;
+    display:block;
 }
   
 .container img {
-    width: 500px;
-    border: 1px black solid;
-    margin-left: 20px;
+  padding: 20px 0px;
+  width: 500px;
+  margin: 0 auto;
 }
   
 .container p {
@@ -76,8 +137,137 @@ main{
     text-align: justify;
     font-size: larger;
 }
+
 #titulo{
     margin: 20px auto;
     font-weight: bold;
 }
 
+/* Formulario */
+
+.formulario{
+  width: 750px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px;
+  position: relative;
+}
+
+.formulario__titulo{
+   text-align: center;
+   margin-top: 0;
+   color: rgba(0,0,0,0.7);
+   margin-bottom: 20px;
+}
+
+.formulario__input, .formulario__label , .formulario__submit{
+  display: block;
+  width: 97%;
+  font-size: 1.3em; 
+}
+
+.formulario__input{
+  padding: 20px 0px;
+  padding-left: 20px;
+  background: rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.3); 
+  margin-bottom: 40px;
+}
+.formulario__input:focus + .formulario__label{
+ margin-top: -135px;
+}
+
+.formulario__label{
+   padding-left: 15px;
+   position: absolute;
+   margin-top: -85px;
+   z-index: -20;
+   color: rgba(0,0,0,0.5);
+   transition: all 0.2s;
+}
+
+.formulario__submit{
+  background:rgba(0,0,0,0.7);
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.fijar{
+  margin-top: -135px;
+}
+/*Pagina Descarga*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .titulo {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+
+  /*Boton Descarga*/
+  
+  .boton-descargar {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 10px 0px 10px;
+  }
+  
+  /*Pie De Página*/
+  
+
+  footer {
+    clear: both;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0px;
+    flex-direction: 0;
+    text-align: center;
+    margin-top: auto;
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+  
+  }
+  
+  /*Texto en la pestaña Descarga*/
+
+  .descargar{
+    padding-left: 10px;
+  }
+
+  /*Título del texto para descargar la App*/
+  
+  .titulo_descarga{
+    padding: 10px;
+  }
+
+  /*Mensaje que va con el botón*/
+  .mensaje_boton{
+    padding: 20px;
+    height: 20px;
+  }
+
+  /* Footer del contacto */
+  .footer_relativos {
+    position: relative;
+    margin-top: 20px;
+  }
+
+  .texto_documentacion {
+    padding: 10px 20px;
+  }
