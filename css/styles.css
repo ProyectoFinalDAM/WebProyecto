@@ -119,10 +119,20 @@ main{
     display: flex;
     flex-wrap: wrap;
 }
+main p {
+  max-width: 100%;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+}
 .container {
   text-align: center; /* Centra la imagen horizontalmente */
   line-height: 1.5;
-    display:block;
+  display:block;
+  display: flex;
+  flex-direction: column;
 }
   
 .container img {
@@ -203,13 +213,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    height: 100%;
   }
   
   .titulo {
     background-color: #333;
     color: #fff;
-    padding: 10px;
+    padding: 10px -1px 10px 10px;
   }
   
 
